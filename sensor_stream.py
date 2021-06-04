@@ -1,10 +1,13 @@
 # project
+import os
 from occupancy.director import Director
+from dotenv import load_dotenv
+load_dotenv()
 
 # Fill in from the Service Account and Project:
-USERNAME   = "SERVICE_ACCOUNT_KEY"       # this is the key
-PASSWORD   = "SERVICE_ACCOUT_SECRET"     # this is the secret
-PROJECT_ID = "PROJECT_ID"                # this is the project id
+USERNAME   = os.getenv("DT_SVC_ID")
+PASSWORD   = os.getenv("DT_SVC_KEY")
+PROJECT_ID = os.getenv("DT_PROJECT")
 
 # url base and endpoint
 API_URL_BASE  = "https://api.disruptive-technologies.com/v2"
