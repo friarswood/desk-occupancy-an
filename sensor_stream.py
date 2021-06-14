@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Fill in from the Service Account and Project:
-USERNAME   = os.getenv("DT_SVC_ID")
-PASSWORD   = os.getenv("DT_SVC_KEY")
+USERNAME   = os.getenv("DT_SVC_KEY")
+PASSWORD   = os.getenv("DT_SVC_SECRET")
 PROJECT_ID = os.getenv("DT_PROJECT")
 
 # url base and endpoint
